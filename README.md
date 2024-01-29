@@ -1,3 +1,3 @@
 # Image Slider
 이미지 슬라이더
-<a href="#" onclick="window.open('https://jsootv.github.io', '_blank');">Image Slider</a>
+<input type="button" onclick="window.open('https://jsootv.github.io', '_blank');" value="Image Slider" />
