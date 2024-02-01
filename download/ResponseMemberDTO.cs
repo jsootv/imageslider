@@ -23,7 +23,7 @@ public class ResponseMemberDTO
     public string Message { get; set; } = default!;
 
     /// <summary>
-    /// 
+    /// 성공여부
     /// </summary>
     public bool Success { get; set; } = false;
 }
