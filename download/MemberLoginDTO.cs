@@ -10,7 +10,7 @@ public class MemberLoginDTO
     /// <summary>
     /// 회원 아이디
     /// </summary>
-    [Key, Required(ErrorMessage = "회원 아이디를 입력하세요.")]
+    [Required(ErrorMessage = "회원 아이디를 입력하세요.")]
     [MinLength(6, ErrorMessage = "회원 아이디는 6자 이상 입력하세요.")]
     [Display(Name = "회원 아이디")]
     public string MemberId { get; set; } = default!;
