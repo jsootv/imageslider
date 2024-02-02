@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 	<head>
 
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>강의 매뉴얼 사이트</title>
+		<title>강의 매뉴얼 사이트</title>	
 
 		<meta name="keywords" content="Lecture manual" />
 		<meta name="description" content="Lecture manual">
@@ -20,7 +20,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -37,6 +37,9 @@
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
 
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="vendor/circle-flip-slideshow/css/component.css">
+
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
 
@@ -46,27 +49,27 @@
 	</head>
 	<body data-plugin-page-transition>
 		<div class="body">
-			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-				<div class="header-body border-top-0">
-					<div class="header-container container">
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 box-shadow-none">
+					<div class="header-container header-container-md container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Logo" width="72" height="72" src="img/profiles/jsootv.png">
+											<img alt="Logo" width="72" height="72" data-sticky-width="72" data-sticky-height="72" data-sticky-top="0" src="img/profiles/jsootv.png">
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="header-column justify-content-end">
 								<div class="header-row">
-									<div class="header-nav header-nav-links">
-										<div class="header-nav-main header-nav-main-square header-nav-main-font-alternative header-nav-main-effect-2 header-nav-main-sub-effect-1">
+									<div class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-no-transform header-nav-bottom-line-active-text-dark header-nav-bottom-line-effect-1 order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle active" href="index.html">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
 															Home
 														</a>
 														<ul class="dropdown-menu">
@@ -84,6 +87,14 @@
 															</li>
 														</ul>
 													</li>
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle active" href="#">
+															Pages
+														</a>
+														<ul class="dropdown-menu">
+															<li><a class="dropdown-item" href="sitemap.html">Sitemap</a></li>
+														</ul>
+													</li>
 												</ul>
 											</nav>
 										</div>
@@ -95,57 +106,68 @@
 				</div>
 			</header>
 
-			<hr class="mt-0 mb-5">
-
 			<div role="main" class="main">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-7 text-center text-lg-start">
-							<h2 class="font-weight-bold text-8 line-height-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span class="text-5"><span class="text-color-primary" title="서로 다른 두 가지 이상의 시스템을 서로 연결해주는 인터페이스">System Interface</span>에서 <span class="text-color-primary" title="서로 다른 두 가지 이상의 응용 프로그램이 서로 통신하는 인터페이스">Application Programming Interface</span>로 변화</span></h2>
-						</div>
-						<div class="col-lg-3 text-center text-lg-end">
-							<h4 class="text-4 line-height-6 font-weight-normal appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800"><span class="opacity-10"><text style="text-decoration: underline;">시스템간 연결</text>에서<br /><text style="text-decoration: underline;">응용 프로그램간 통신</text>으로 확장</span></h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-								<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual nav-inside nav-style-1 nav-light mt-2" data-plugin-options="{'autoplayTimeout': 6000000}" data-dynamic-height="['520px','520px','520px','210px','180px']" style="height: 520px;">
-									<div class="owl-stage-outer">
-										<div class="owl-stage">
 
-											<!-- Carousel Slide 1 -->
-											<div class="owl-item position-relative" style="background-image: url(img/lec/system-interface.png); background-size: cover; background-position: center;"></div>
-
-											<!-- Carousel Slide 2 -->
-											<div class="owl-item position-relative" style="background-image: url(img/lec/api-server.png); background-size: cover; background-position: center;"></div>
-
-										</div>
-									</div>
-									<div class="owl-nav">
-										<button type="button" role="presentation" class="owl-prev" aria-label="Previous"></button>
-										<button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
-									</div>
-								</div>
+				<section class="page-header page-header-modern bg-color-grey page-header-lg">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 align-self-center p-static order-2 text-center">
+								<h1 class="font-weight-bold text-dark">Sitemap</h1>
+							</div>
+							<div class="col-md-12 align-self-center order-1">
+								<ul class="breadcrumb d-block text-center">
+									<li><a href="index.html">Home</a></li>
+									<li class="active">Pages</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-					<hr class="my-5">
+				<div class="container py-4">
+
+					<div class="row">
+						<div class="col-sm-3">
+
+							<h3 class="font-weight-bold text-4 mb-2">HOME</h3>
+							<ul class="list list-icons list-icons-sm mb-4">
+								<li><a href="index.html"><i class="far fa-file"></i>Main Page</a></li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">ASP.NET CORE</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="server-client.html"><i class="far fa-file"></i>Server & Client</a></li>
+										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
+										<li><a href="authentication-authorization.html"><i class="far fa-file"></i>인증과 권한부여</a></li>
+										<li><a href="sso-authentication-authorization.html"><i class="far fa-file"></i>SSO 인증과 권한부여</a></li>
+										<li><a href="request-response.html"><i class="far fa-file"></i>API 요청과 응답</a></li>
+										<li><a href="function-algorithm.html"><i class="far fa-file"></i>암호화 방식</a></li>
+										<li><a href="membership-erd.html"><i class="far fa-file"></i>멤버십 ERD</a></li>
+									</ul>
+								</li>								
+							</ul>
+
+						</div>
+
+						<div class="col-sm-3">
+
+							<h3 class="font-weight-bold text-4 mb-2">PAGES</h3>
+							<ul class="list list-icons list-icons-sm mb-4">
+								<li><a href="sitemap.html"><i class="far fa-file"></i>Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
-				
 			</div>
 
-			<footer id="footer" class="mt-0">
+			<footer id="footer" class="footer-texts-more-lighten">
 				<div class="container">
 					<div class="row py-3"></div>
 				</div>
-				<div class="footer-copyright footer-copyright-style-2">
-					<div class="container py-2">
+				<div class="container">
+					<div class="footer-copyright footer-copyright-style-2 pt-4 pb-5">
 						<div class="row py-4">
-							<div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-lg-0">
+							<div class="col-12 text-center">
 								<p>© Copyright 2024 jsootv.com. All Rights Reserved.</p>
 							</div>
 						</div>
@@ -159,6 +181,11 @@
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
+
+		<!-- Circle Flip Slideshow Script -->
+		<script src="vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<!-- Current Page Views -->
+		<script src="js/views/view.home.js"></script>
 
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
