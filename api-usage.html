@@ -138,42 +138,39 @@
 				<div class="container py-4">
 
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 
 							<h3 class="font-weight-bold text-4 mb-2">API 사용법</h3>
 							<ul class="list list-icons list-icons-sm mb-4">
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">MVC Project&nbsp;&nbsp;vs&nbsp;&nbsp;API Project</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">MVC Project <text style="font-size:x-large">↔️</text> API Project</h3>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
-										<li><a href="server-client.html"><i class="far fa-file"></i>Server & Client</a></li>
+										<li><i class="far fa-file"></i>MVC : HttpGet, HttpPost</li>
+										<li><i class="far fa-file"></i>API : HttpGet, HttpPost,<br />HttpPut, HttpDelete</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Controller&nbsp;&nbsp;vs&nbsp;&nbsp;ControllerBase</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Controller <text style="font-size:x-large">↔️</text> ControllerBase</h3>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
-										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
+										<li><i class="far fa-file"></i>Controller = ControllerBase + 𝛂</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">AddControllersWithViews&nbsp;&nbsp;vs&nbsp;&nbsp;AddControllers</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">AddControllersWithViews <text style="font-size:x-large">↔️</text> AddControllers</h3>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
-										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
+										<li><i class="far fa-file"></i>AddControllersWithViews = AddControllers + Views</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Both Server & Client&nbsp;&nbsp;vs&nbsp;&nbsp;Client only</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Server와 Client 모두 <text style="font-size:x-large">↔️</text> Client만</h3>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
-										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
+										<li>▪ MVC에게 서버와 클라이언트 역할을 모두 맡길 것인가?</li>
+										<li>▪ 아니면, 서버 역할은 API에게 양도할 것인가?</li>
+										<li><a href="server-client.html"><i class="far fa-file"></i>Server / Client</a></li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">API server replaces the Database</h3>
-									<ul class="list list-icons list-icons-sm mb-3 text-2">
-										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
-									</ul>
-								</li>
-								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Diverse models</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">API server가 DB를 대신한다.</h3>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
 									</ul>
@@ -182,11 +179,90 @@
 
 						</div>
 
-						<div class="col-sm-3">
+						<div class="col-sm-2"></div>
 
-							<h3 class="font-weight-bold text-4 mb-2">PAGES</h3>
+						<div class="col-sm-4">
+
+							<h3 class="font-weight-bold text-4 mb-2">Model 구분</h3>
 							<ul class="list list-icons list-icons-sm mb-4">
-								<li><a href="sitemap.html"><i class="far fa-file"></i>Sitemap</a></li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Domain model<text style="font-weight: normal;">(업무모델)</text></h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/Member.cs"><i class="far fa-file"></i>Member.cs</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">View model</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberLoginDTO.cs"><i class="far fa-file"></i>MemberLoginDTO.cs</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">DTO model<text style="font-weight: normal;">(Data Transfer Object; 데이터 전송 모델)</text></h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberLoginDTO.cs"><i class="far fa-file"></i>MemberLoginDTO.cs</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">RequestDTO model<text style="font-weight: normal;">(Request 접두어 생략)</text></h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberLoginDTO.cs"><i class="far fa-file"></i>MemberLoginDTO.cs</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">ResponseDTO model<text style="font-weight: normal;">(보통 Response 접두어만 추가)</text></h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/ResponseMemberDTO.cs"><i class="far fa-file"></i>ResponseMemberDTO.cs</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<!--<div class="col-sm-2"></div>-->
+
+						<div class="col-sm-4">
+
+							<h3 class="font-weight-bold text-4 mb-2">API 동작원리</h3>
+							<ul class="list list-icons list-icons-sm mb-4">
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">API 요청과 응답</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="request-response.html"><i class="far fa-file"></i>Request & Response</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">FromBody attribute</h3>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Request body</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><i class="far fa-file"></i>데이터를 어디에서 가져올 것인가?</li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Curl</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li><a href="request-response.html"><i class="far fa-file"></i>Client URL</a></li>
+										<li><a href="download/structure.html"><i class="far fa-file"></i>HTML 구조</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Web program <text style="font-size:x-large">↔️</text> CS program</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li>Server를 지원할 수 있는 Client</li>
+										<li>Platform에 종속적이다.</li>
+										<li>업데이트된 소스 배포가 어렵다.</li>
+										<li>Client의 상태정보 유지가 힘들다.</li>
+										<li>Stateless</li>
+									</ul>
+								</li>
+								<li>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Context</h3>
+									<ul class="list list-icons list-icons-sm mb-3 text-2">
+										<li>HttpContext</li>
+										<li>DbContext</li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</div>
