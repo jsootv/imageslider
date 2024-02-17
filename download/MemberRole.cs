@@ -10,7 +10,7 @@ public class MemberRole
     /// <summary>
     /// 권한 유형
     /// </summary>
-    [Key, StringLength(50), Column(TypeName = "varchar(50)")]
+    [StringLength(50), Column(TypeName = "varchar(50)")]
     public string RoleType { get; set; } = default!;
 
     /// <summary>
