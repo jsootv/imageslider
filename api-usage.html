@@ -143,7 +143,7 @@
 							<h3 class="font-weight-bold text-4 mb-2">1. API 사용법</h3>
 							<ul class="list list-icons list-icons-sm mb-4">
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">MVC Project <text style="font-size:x-large">↔️</text> API Project</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">MVC Project <text style="font-size:x-large">↔️</text> API Project</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><text style="font-weight:bold;">MVC</text> : HttpGet(<text style="font-weight:bold;color:#0000FF;">R</text>), HttpPost(<text style="font-weight:bold;color:#FF0000;">CRUD</text>)</li>
 										<li><text style="font-weight:bold;">API</text> : HttpGet(<text style="font-weight:bold;color:#0000FF;">R</text>) / HttpPost(<text style="font-weight:bold;color:#FF0000;">CR</text>) / HttpPut(<text style="font-weight:bold;color:#FF0000;">U</text>), HttpDelete(<text style="font-weight:bold;color:#FF0000;">D</text>)</li>
@@ -153,20 +153,20 @@
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Controller <text style="font-size:x-large">↔️</text> ControllerBase</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Controller <text style="font-size:x-large">↔️</text> ControllerBase</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><text style="font-weight: bold;">ControllerBase</text> = ~Result + ModelStateDictionary</li>
 										<li><text style="font-weight: bold;">Controller</text> = <text style="font-weight: bold;">ControllerBase</text> + ViewData + TempData + ViewResult</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">AddControllersWithViews <text style="font-size:x-large">↔️</text> AddControllers</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">AddControllersWithViews <text style="font-size:x-large">↔️</text> AddControllers</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><i class="far fa-file"></i>AddControllersWithViews = AddControllers + Views</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Server와 Client 모두 <text style="font-size:x-large">↔️</text> Client만</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Server와 Client 모두 <text style="font-size:x-large">↔️</text> Client만</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>▪ MVC에게 서버와 클라이언트 역할을 모두 맡길 것인가?</li>
 										<li>▪ 아니면, 서버 역할은 API에게 양도할 것인가?</li>
@@ -174,7 +174,7 @@
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">API server가 DB를 대신한다.</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">API server가 DB를 대신한다.</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><a href="si-api.html"><i class="far fa-file"></i>SI vs API</a></li>
 									</ul>
@@ -190,7 +190,7 @@
 							<h3 class="font-weight-bold text-4 mb-2">2. Model 구분</h3>
 							<ul class="list list-icons list-icons-sm mb-4">
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">(1) Domain model<text style="font-weight: normal;">(업무모델)</text></h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">(1) Domain model<text style="font-weight: normal;">(업무모델)</text></h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>회원 : <a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/Member.cs">Member.cs</a></li>
 										<li>회원 권한 : <a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberRole.cs">MemberRole.cs</a></li>
@@ -198,27 +198,27 @@
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">(2) View model</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">(2) View model</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>RequestDTO model</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3) DTO model<text style="font-weight: normal;">(Data Transfer Object; 데이터 전송 모델)</text></h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3) DTO model<text style="font-weight: normal;">(Data Transfer Object; 데이터 전송 모델)</text></h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>RequestDTO model</li>
 										<li>ResponseDTO model</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3-1) RequestDTO model<text style="font-weight: normal;">(요청모델; Request 접두어 생략)</text></h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3-1) RequestDTO model<text style="font-weight: normal;">(요청모델; Request 접두어 생략)</text></h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>회원로그인 : <a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberLoginDTO.cs">MemberLoginDTO.cs</a></li>
 										<li>회원가입 : <a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/RegisterDTO.cs">RegisterDTO.cs</a></li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3-2) ResponseDTO model<text style="font-weight: normal;">(응답모델; 보통 Response 접두어만 추가)</text></h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">(3-2) ResponseDTO model<text style="font-weight: normal;">(응답모델; 보통 Response 접두어만 추가)</text></h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/ResponseMemberDTO.cs">ResponseMemberDTO.cs</a></li>
 									</ul>
@@ -233,25 +233,25 @@
 							<h3 class="font-weight-bold text-4 mb-2">3. API 동작원리</h3>
 							<ul class="list list-icons list-icons-sm mb-4">
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">API 요청과 응답</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">API 요청과 응답</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><a href="request-response.html"><i class="far fa-file"></i>Request & Response</a></li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">FromBody attribute</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">FromBody attribute</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><text style="color:#0000FF;">public</text> <text style="color:#2B91AF;">IActionResult</text> <text style="color:#74531F;">Login</text>(<text style="font-weight:bold;">[<text style="color:#2B91AF;">FromBody</text>]</text> <a href="https://github.com/jsootv/jsootv.github.io/blob/main/download/MemberLoginDTO.cs"><text style="color:#2B91AF;">MemberLoginDTO</text></a> login) { }</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Request body</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Request body</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>데이터를 어디에서 가져올 것인가?</li>
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Curl</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Curl</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><a href="request-response.html"><i class="far fa-file"></i>Client URL</a></li>
 										<li>Curl 명령어(대소문자 구분) : <text style="font-weight:bold;">H</text> - Header, <text style="font-weight:bold;">d</text> - HTTP Post data</li>
@@ -259,7 +259,7 @@
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Web program <text style="font-size:x-large">↔️</text> CS program</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Web program <text style="font-size:x-large">↔️</text> CS program</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li>Server를 지원할 수 있는 Client</li>
 										<li>Platform에 종속적이다.</li>
@@ -269,7 +269,7 @@
 									</ul>
 								</li>
 								<li>
-									<h4 class="font-weight-bold text-3 mb-1 mt-2">Context</h3>
+									<h4 class="font-weight-bold text-3 mb-1 mt-2">Context</h4>
 									<ul class="list list-icons list-icons-sm mb-3 text-2">
 										<li><i class="far fa-file"></i>Stateless와 관련된 Context 네이밍</li>
 										<li>HttpContext</li>
